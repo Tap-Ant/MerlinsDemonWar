@@ -13,4 +13,20 @@ public class Card : MonoBehaviour
     public Image cardImage = null;
     public Image frameImage = null;
     public Image burnImage = null;
+
+    public void Initialize()
+    {
+        if (cardData == null)
+        {
+            Debug.LogError("Card has no CardData");
+            return;
+        }
+
+        titleText.text = cardData.cardTitle;
+        descriptionText.text = cardData.description;
+        cardImage.sprite = cardData.cardImage;
+        frameImage.sprite = cardData.frameImage;
+        costImage.sprite = GameController.instance.healthNumbers[cardData.cost];
+        damageImage.sprite = GameController.instance.healthNumbers[cardData.damage];
+    }
 }
