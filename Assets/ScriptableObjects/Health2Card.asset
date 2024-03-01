@@ -19,7 +19,7 @@ MonoBehaviour:
   damageType: 0
   cardImage: {fileID: 21300000, guid: 9044fb884ed86d54ea970f2c815f50b4, type: 3}
   frameImage: {fileID: 21300000, guid: 4e4236ff796fbc547a04a9dceecafddd, type: 3}
-  numberInDeck: 6
+  numberInDeck: 3
   isDefenseCard: 1
   isMirrorCard: 0
   isMulti: 0
