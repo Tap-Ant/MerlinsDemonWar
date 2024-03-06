@@ -17,11 +17,20 @@ public class Player : MonoBehaviour
     public bool isFire;   // whether enemy is a fire monster
 
     public GameObject[] manaBalls = new GameObject[5];
+    private Animator animator = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
+    }
+
+    internal void PlayHitAnim()
+    {
+        if (animator != null)
+        {
+            animator.SetTrigger("Hit");
+        }
     }
 
     
