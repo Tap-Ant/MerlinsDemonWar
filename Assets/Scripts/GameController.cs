@@ -16,11 +16,18 @@ public class GameController : MonoBehaviour
     public Sprite[] healthNumbers = new Sprite[10];
     public Sprite[] damageNumbers = new Sprite[10];
 
+    public GameObject cardPrefab = null;
+    public Canvas canvas = null;
+
+    public bool isPlayable = false;
+
     private void Awake()
     {
         instance = this;
         playerDeck.Create();
         enemyDeck.Create();
+
+        StartCoroutine(DealHands());
     }
     public void Quit()
     {
@@ -31,5 +38,17 @@ public class GameController : MonoBehaviour
     public void SkipTurn()
     {
         Debug.Log("Skip Turn");
+    }
+
+    internal IEnumerator DealHands()
+    {
+        yield return new WaitForSeconds(1);
+        for (int t=0; t<3; t++)
+        {
+            playerDeck.DealCard(playersHand);
+            enemyDeck.DealCard(enemysHand);
+            yield return new WaitForSeconds(1);
+        }
+        isPlayable = true;
     }
 }
