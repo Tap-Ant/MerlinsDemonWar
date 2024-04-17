@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9cfa650892c0fb42955c17300993972, type: 3}
   m_Name: Fire2AttackCard
   m_EditorClassIdentifier: 
-  cardTitle: Multi Fire
+  cardTitle: Firestorm
   description: Casts multiple Fireball attacks
   cost: 2
   damage: 4
@@ -22,4 +22,5 @@ MonoBehaviour:
   numberInDeck: 4
   isDefenseCard: 0
   isMirrorCard: 0
-  isMulti: 0
+  isMulti: 1
+  isDestruct: 0

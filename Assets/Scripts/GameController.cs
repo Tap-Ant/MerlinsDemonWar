@@ -41,6 +41,7 @@ public class GameController : MonoBehaviour
     public Sprite multiFireBallImage = null;
     public Sprite multiIceBallImage  = null;
     public Sprite fireAndIceImage    = null;
+    public Sprite destructImage      = null;
 
     public AudioSource playerDieAudio = null;
     public AudioSource enemyDieAudio  = null;
@@ -187,7 +188,10 @@ public class GameController : MonoBehaviour
             {
                 case CardData.DamageType.Fire:
                     if (card.cardData.isMulti)
+                    {
                         effect.effectImage.sprite = multiFireBallImage;
+                        effect.PlayFireSound();
+                    }
                     else
                     {
                         effect.effectImage.sprite = fireBallImage;
@@ -196,7 +200,10 @@ public class GameController : MonoBehaviour
                     break;
                 case CardData.DamageType.Ice:
                     if (card.cardData.isMulti)
+                    { 
                         effect.effectImage.sprite = multiIceBallImage;
+                        effect.PlayIceSound();
+                    }
                     else
                     {
                         effect.effectImage.sprite = iceBallImage;
@@ -207,6 +214,10 @@ public class GameController : MonoBehaviour
                     effect.effectImage.sprite = fireAndIceImage;
                     effect.PlayIceSound();
                     effect.PlayFireSound();
+                    break;
+                case CardData.DamageType.Destruct:
+                    effect.effectImage.sprite = destructImage;
+                    effect.PlayDestructSound();
                     break;
             }
         }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9cfa650892c0fb42955c17300993972, type: 3}
   m_Name: FireAndIceCard
   m_EditorClassIdentifier: 
-  cardTitle: Fire & Ice
+  cardTitle: Frozen Fire
   description: Casts both Fire and Ice attacks
   cost: 3
   damage: 3
@@ -23,3 +23,4 @@ MonoBehaviour:
   isDefenseCard: 0
   isMirrorCard: 0
   isMulti: 0
+  isDestruct: 0

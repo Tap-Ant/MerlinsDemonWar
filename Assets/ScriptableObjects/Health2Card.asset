@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9cfa650892c0fb42955c17300993972, type: 3}
   m_Name: Health2Card
   m_EditorClassIdentifier: 
-  cardTitle: Large Health
-  description: Restores 1 health
+  cardTitle: Large Potion
+  description: Restores 4 health
   cost: 2
   damage: 4
   damageType: 0
@@ -23,3 +23,4 @@ MonoBehaviour:
   isDefenseCard: 1
   isMirrorCard: 0
   isMulti: 0
+  isDestruct: 0

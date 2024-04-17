@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9cfa650892c0fb42955c17300993972, type: 3}
   m_Name: FireAttackCard
   m_EditorClassIdentifier: 
-  cardTitle: Fire
+  cardTitle: Fireball
   description: Casts a Fireball attack
   cost: 1
   damage: 2
@@ -23,3 +23,4 @@ MonoBehaviour:
   isDefenseCard: 0
   isMirrorCard: 0
   isMulti: 0
+  isDestruct: 0

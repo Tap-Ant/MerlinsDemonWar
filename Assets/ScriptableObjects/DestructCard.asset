@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9cfa650892c0fb42955c17300993972, type: 3}
-  m_Name: IceAttackCard
+  m_Name: DestructCard
   m_EditorClassIdentifier: 
-  cardTitle: Ice Shard
-  description: Casts an ice attack
-  cost: 1
-  damage: 2
-  damageType: 1
-  cardImage: {fileID: 21300000, guid: 5e4b3865bafc706469a1bdb0a1b81cf3, type: 3}
+  cardTitle: Destroy
+  description: Destroys an enemy
+  cost: 5
+  damage: 9
+  damageType: 3
+  cardImage: {fileID: 21300000, guid: a8f9612e33fb7bd429f1622158b5a880, type: 3}
   frameImage: {fileID: 21300000, guid: 2e7c436be4fb0dc4698c1bd04d941987, type: 3}
-  numberInDeck: 6
+  numberInDeck: 1
   isDefenseCard: 0
   isMirrorCard: 0
   isMulti: 0
-  isDestruct: 0
+  isDestruct: 1
